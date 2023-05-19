@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import AedCard from './Component/AedCard';
+import BasicPlan from './Component/BasicPlan';
+import Filter from './Component/Filter';
+import Nav from './Component/Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <Filter/>
+      <AedCard/>
+      <AedCard/>
+      <AedCard/>
+      <BasicPlan/>
+    </>
   );
 }
 
